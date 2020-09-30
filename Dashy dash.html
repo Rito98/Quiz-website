@@ -103,8 +103,8 @@
 		<a href="">CSS Quiz</a>
 	</div>
 
-	<form id="form1">
-
+	<form id="form1" action="anskey.php">
+	<fieldset>
 		<h2>What is a correct syntax to output "Hello World" in Python?</h2>
 		<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />"Hello world"</label><br>
 		<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />print"Hello World"</label><br>
@@ -122,13 +122,14 @@
 		<br>
     	<button id="done" class="donebtn">Done</button>
     	<button id="reset" class="resetbtn">Reset</button>
-    </div>
+	</fieldset>    
+	</div>
 
     <p>Your grade is: <span id="grade">__</span></p>
 	
 
 
-	<script> //from stackoveflow
+	<script> //from stackoveflow, doesn't work here
 		var answers = ["A","C","B"], 
     tot = answers.length;
 
