@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basics Quiz</title>
+	<meta charset="ut-8">
+	<link rel="icon" type="image/x-icon" href=""><!-- icon-->
+
+	<style>
+		body {
+			background-image: url(data:image/jpeg;base64,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);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+			font-family: Helvetica;
+		}
+
+		#main {
+			width: 80%;
+			max-width: 950px;
+			border: 1px gray solid;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			border-radius: 10px;
+		}
+
+		#header {
+			margin-top: 0;
+			border: 2px solid black;
+			padding: 5px;
+			height: 250px;
+			background: beige;
+			background-image: url("code.jpg");
+			color: white;
+		}
+
+		.topnav {
+			background-color: #002366;
+			overflow: hidden;
+			opacity: 0.7;
+		}
+		.topnav a {
+			  float: left;
+			  color: #f2f2f2;
+			  text-align: center;
+			  padding: 14px 16px;
+			  text-decoration: none;
+			  font-size: 17px;
+		}
+		.topnav a:hover {
+		  background-color: white;
+		  color: black;
+		}
+
+		.topnav a.active {
+		  background-color: blue;
+		  color: white;
+		}
+
+		.button {
+			  border: none;
+			  color: white;
+			  padding: 16px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 10px 8px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+		}
+
+		.donebtn {
+			  background-color: white;
+			  color: black;
+			  border: 2px solid #4CAF50;
+		}
+
+		.donebtn:hover {
+			  background-color: #4CAF50;
+			  color: white;
+		}
+
+		.resetbtn {
+			  background-color: white;
+			  color: black;
+			  border: 2px solid #4CAF50;
+		}
+
+		.resetbtn:hover {
+			  background-color: #4CAF50;
+			  color: white;
+		}
+
+	</style>
+</head>
+
+
+<body>
+	<div class="topnav">
+		<a href="">Python Quiz</a> 
+		<a href="">HTML Quiz</a>
+		<a href="">CSS Quiz</a>
+	</div>
+
+	<form id="form1">
+
+		<h2>What is a correct syntax to output "Hello World" in Python?</h2>
+		<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />"Hello world"</label>
+		<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />print"Hello World"</label>
+		<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Print("Hello World")</label>
+		<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>print("Hello World")</label>
+
+		<h2>How do you insert MULTIPLE LINE COMMENTS in Python code?</h2>
+		<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>#Comments</label>
+		<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>"""multiline string"""</label>
+		<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />\\Comments</label>
+		<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />//comments</label>
+
+	<div class="controls">
+		<br>
+		<br>
+    	<button id="done" class="donebtn">Done</button>
+    	<button id="reset" class="resetbtn">Reset</button>
+    </div>
+
+    <p>Your grade is: <span id="grade">__</span></p>
+	
+
+
+	<script> //from stackoveflow
+		var answers = ["A","C","B"], 
+    tot = answers.length;
+
+function getCheckedValue( radioName ){
+    var radios = document.getElementsByName( radioName ); // Get radio group by-name
+    for(var y=0; y<radios.length; y++)
+      if(radios[y].checked) return radios[y].value; // return the checked value
+}
+
+function getScore(){
+  var score = 0;
+  for (var i=0; i<tot; i++)
+    if(getCheckedValue("question"+i)===answers[i]) score += 1; // increment only
+  return score;
+}
+
+function returnScore(){
+  alert("Your score is "+ getScore() +"/"+ tot);
+}
+
+
+   
+</script>
+</body>
+</html>
